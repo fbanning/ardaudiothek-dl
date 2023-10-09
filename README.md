@@ -13,11 +13,13 @@ Having said that: Have fun! :)
 ## Usage
 
 1. Clone the repository.
-2. Run as script or package.
+2. Run as [script](Script) or [package](Package).
+3. Audio files are saved in the current working directory and have the format `# - t.mp3` where `#` is the episode number (if one exists) and `t` is the title of the file.
 
 ### Script
 
 Run `julia ardaudiothek-dl-script.jl $ID` from your shell where `$ID` is the ARD Audiothek identifier of the audio file in question.
+It is also possible to pass in multiple identifiers delimited by a single whitespace (e.g. `julia ardaudiothek-dl-script.jl 123 456`).
 
 (Hint: The identifier can easily be retrieved by hovering over the file names on the ARD Audiothek website and looking at their URLs.)
 
